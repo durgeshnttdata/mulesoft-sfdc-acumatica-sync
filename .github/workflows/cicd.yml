@@ -1,0 +1,11 @@
+on:
+  push:
+    branches: [ main ]
+
+jobs: 
+    cicd:
+        uses: durgeshnttdata/workflow-template/.github/workflows/workflow.yml@main
+        with:
+            appName: mulesoft-sfdc-acumatica-sync
+            
+        secrets: inherit 
