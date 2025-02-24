@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="salesforce-acumatica-sync-api-test-suite.xml" />
+	<munit:test name="salesforce-acumatica-sync-api-test-suite-put:\v1\sf2acsync:application\json:salesforce-acumatica-sync-api-configTest" doc:id="fa8165a4-3036-4192-b62a-04507bd563b5" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to put:\v1\sf2acsync:application\json:salesforce-acumatica-sync-api-config" doc:id="eee723eb-7b8b-4360-b5d9-02417a1d6e58" name="put:\v1\sf2acsync:application\json:salesforce-acumatica-sync-api-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that" doc:id="3662eebe-a821-4a33-8696-90e7926c7554" is="#[MunitTools::equalTo(payload)]" expression='#[{&#10;  message: "The SF to Acumatica sync is completed for the given opportunity : OPP-01537585 "&#10;}]' />
+		</munit:validation>
+	</munit:test>
+
+
+</mule>
