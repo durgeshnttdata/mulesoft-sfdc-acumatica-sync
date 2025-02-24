@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>272c406d-e2c1-4b02-87f9-38e686f1e9e1</groupId>
 	<artifactId>mule-sfdc-acumatica</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
 	<name>mule-sfdc-acumatica</name>
