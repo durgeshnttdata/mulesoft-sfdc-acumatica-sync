@@ -10,7 +10,7 @@
 	<name>mule-sfdc-acumatica</name>
 	<distributionManagement>
 		<repository>
-			<id>anypoint-exchange-v3</id>
+			<id>Repository</id>
 			<name>Corporate Repository</name>
 			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
 			<layout>default</layout>
@@ -47,7 +47,7 @@
 						<target>${cloudhub.target}</target>
 						<releaseChannel>LTS</releaseChannel>
 						<javaVersion>17</javaVersion>
-						<server>anypoint-exchange-v3</server>
+						<server>Repository</server>
 						<applicationName>${application.name}</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
@@ -143,13 +143,19 @@
 
 	<repositories>
 		<repository>
+			<id>anypoint-exchange-v3</id>
+			<name>Anypoint Exchange</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+			<layout>default</layout>
+		</repository>
+		<repository>
 			<id>mulesoft-releases</id>
 			<name>MuleSoft Releases Repository</name>
 			<url>https://repository.mulesoft.org/releases/</url>
 			<layout>default</layout>
 		</repository>
 		<repository>
-			<id>anypoint-exchange-v3</id>
+			<id>Repository</id>
 			<name>Private Exchange repository</name>
 			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
 			<layout>default</layout>
