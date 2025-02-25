@@ -47,9 +47,10 @@
 						<releaseChannel>LTS</releaseChannel>
 						<javaVersion>17</javaVersion>
 						<server>Repository</server>
+						<businessGroupId>${project.groupId}</businessGroupId>
 						<applicationName>${application.name}</applicationName>
-						<replicas>1</replicas>
-						<vCores>0.1</vCores>
+						<replicas>${replicas}</replicas>
+						<vCores>${vcores}</vCores>
 						<properties>
 							<mule.env>${env}</mule.env>
 							<datadog.env>${datadog.env}</datadog.env>
