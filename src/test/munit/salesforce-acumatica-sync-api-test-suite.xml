@@ -13,7 +13,7 @@
 			<flow-ref doc:name="Flow-ref to put:\v1\sf2acsync:application\json:salesforce-acumatica-sync-api-config" doc:id="eee723eb-7b8b-4360-b5d9-02417a1d6e58" name="put:\v1\sf2acsync:application\json:salesforce-acumatica-sync-api-config"/>
 		</munit:execution>
 		<munit:validation >
-			<munit-tools:assert-that doc:name="Assert that" doc:id="3662eebe-a821-4a33-8696-90e7926c7554" is="#[MunitTools::equalTo(payload)]" expression='#[{&#10;  message: "The SF to Acumatica sync is completed for the given opportunity : OPP-01537585 "&#10;}]' />
+			<munit-tools:assert-that doc:name="Assert that" doc:id="3662eebe-a821-4a33-8696-90e7926c7554" is="#[MunitTools::equalTo(payload)]" expression='#[{&#10;  message: "The SF to Acumatica sync is completed for the given opportunity : OPP-01537555 "&#10;}]' />
 		</munit:validation>
 	</munit:test>
 
