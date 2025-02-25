@@ -49,8 +49,8 @@
 						<javaVersion>17</javaVersion>
 						<server>Repository</server>
 						<applicationName>${application.name}</applicationName>
-						<replicas>${replicas}</replicas>
-						<vCores>${vcores}</vCores>
+						<replicas>1</replicas>
+						<vCores>0.1</vCores>
 						<properties>
 							<mule.env>${env}</mule.env>
 							<datadog.env>${datadog.env}</datadog.env>
