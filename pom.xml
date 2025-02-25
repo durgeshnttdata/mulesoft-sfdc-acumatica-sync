@@ -2,7 +2,7 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>0c88fcc4-2f88-4ee1-88f5-b8f70772a59f</groupId>
+	<groupId>272c406d-e2c1-4b02-87f9-38e686f1e9e1</groupId>
 	<artifactId>mule-sfdc-acumatica</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
@@ -21,7 +21,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		
+
 		<mule.maven.plugin.version>4.4.0</mule.maven.plugin.version>
 		<munit.version>3.3.0</munit.version>
 	</properties>
@@ -49,8 +49,8 @@
 						<javaVersion>17</javaVersion>
 						<server>Repository</server>
 						<applicationName>${application.name}</applicationName>
-						<replicas>1</replicas>
-						<vCores>0.1</vCores>
+						<replicas>${replicas}</replicas>
+						<vCores>${vcores}</vCores>
 						<properties>
 							<mule.env>${env}</mule.env>
 							<datadog.env>${datadog.env}</datadog.env>
@@ -107,7 +107,7 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
-			<groupId>0c88fcc4-2f88-4ee1-88f5-b8f70772a59f</groupId>
+			<groupId>272c406d-e2c1-4b02-87f9-38e686f1e9e1</groupId>
 			<artifactId>salesforce-acumatica-sync-api</artifactId>
 			<version>1.0.0</version>
 			<classifier>raml</classifier>
