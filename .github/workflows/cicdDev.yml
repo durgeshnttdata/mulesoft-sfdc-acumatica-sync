@@ -4,7 +4,7 @@ on:
 
 jobs: 
     cicd:
-        uses: durgeshnttdata/workflow-template/.github/workflows/workflow.yml@main
+        uses: durgeshnttdata/workflow-template/.github/workflows/workflowDev.yml@main
         with:
             appName: mulesoft-sfdc-acumatica-sync
             
