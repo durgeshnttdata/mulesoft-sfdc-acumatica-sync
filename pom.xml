@@ -5,7 +5,6 @@
 	<artifactId>mule-sfdc-acumatica</artifactId>
 	<version>1.0.3-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
-
 	<name>mule-sfdc-acumatica</name>
 	<distributionManagement>
 		<repository>
