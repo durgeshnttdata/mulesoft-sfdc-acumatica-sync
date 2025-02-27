@@ -6,6 +6,6 @@ jobs:
     cicd:
         uses: durgeshnttdata/workflow-template/.github/workflows/workflow.yml@main
         with:
-            appName: mulesoft-sfdc-acumatica-sync
+            appName: mule-sfdc-acumatica-sync
             
         secrets: inherit 
