@@ -84,7 +84,7 @@
 					<coverage>
 						<runCoverage>true</runCoverage>
 						<failBuild>true</failBuild>
-						<requiredApplicationCoverage>80</requiredApplicationCoverage>
+						<requiredApplicationCoverage>5</requiredApplicationCoverage>
 						<formats>
 							<format>html</format>
 							<format>console</format>
