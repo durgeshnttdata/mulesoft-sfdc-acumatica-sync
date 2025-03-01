@@ -83,9 +83,15 @@
 				<configuration>
 					<coverage>
 						<runCoverage>true</runCoverage>
+						<failBuild>true</failBuild>
+						<requiredApplicationCoverage>80</requiredApplicationCoverage>
 						<formats>
 							<format>html</format>
+							<format>console</format>
 						</formats>
+						<ignoreFiles>
+							<ignoreFile>global/global-error-handler.xml</ignoreFile>
+						</ignoreFiles>
 					</coverage>
 				</configuration>
 			</plugin>
