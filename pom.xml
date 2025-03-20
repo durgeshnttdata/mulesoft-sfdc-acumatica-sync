@@ -112,7 +112,7 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 		<dependency>
-			<groupId>272c406d-e2c1-4b02-87f9-38e686f1e9e1</groupId>
+			<groupId>43fbf18f-9dc9-4be9-a90f-970dcb8f70f7</groupId>
 			<artifactId>salesforce-acumatica-sync-api</artifactId>
 			<version>1.0.0</version>
 			<classifier>raml</classifier>
