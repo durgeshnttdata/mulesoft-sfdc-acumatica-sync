@@ -5,7 +5,7 @@
 	<artifactId>mule-sfdc-acumatica</artifactId>
 	<version>1.0.2-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
-	<name>mule-sfdc-acumatica</name>
+	<name>mule-sfdc-acumatica_1</name>
 	<distributionManagement>
 		<repository>
 			<id>Repository</id>
@@ -52,8 +52,8 @@
 							<mule.env>${env}</mule.env>
 							<datadog.env>${datadog.env}</datadog.env>
 						</properties>
-						<secureProperties>  		
-							<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>           
+						<secureProperties>
+							<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
 							<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
 							<mule.key>${secure_key}</mule.key>
 							<ddapikey>${ddapikey}</ddapikey>
@@ -141,6 +141,12 @@
 			<artifactId>assertions</artifactId>
 			<version>1.2.1</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.connectors</groupId>
+			<artifactId>mule-email-connector</artifactId>
+			<version>1.7.4</version>
+			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
 
