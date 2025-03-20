@@ -6,12 +6,13 @@ http://www.mulesoft.org/schema/mule/email http://www.mulesoft.org/schema/mule/em
     </http:listener-config>
     <apikit:config name="salesforce-acumatica-sync-api-config" api="resource::43fbf18f-9dc9-4be9-a90f-970dcb8f70f7:salesforce-acumatica-sync-api:1.0.0:raml:zip:salesforce-acumatica-sync-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
     <email:smtp-config name="Email_SMTP" doc:name="Email SMTP" doc:id="c60c9ed9-95fe-4f98-b392-3f581868cb9d" >
-		<email:smtp-connection host="smtp.gmail.com" user="durgesh.purbey@gmail.com" password="iugmdcpslqjdsfgq" >
+		<email:smtp-connection host="${smtp.config.host}" user="${smtp.config.user}" password="iugmdcpslqjdsfgq" port="${smtp.config.port}">
 			<email:properties >
 				<email:property key="mail.smtp.starttls.enable" value="true" />
 			</email:properties>
 		</email:smtp-connection>
 	</email:smtp-config>
+	<configuration-properties doc:name="Configuration properties" doc:id="c8dbd82c-35ef-4252-84f6-239284bec6c0" file="${mule.env}.yaml" />
 	<flow name="salesforce-acumatica-sync-api-main">
         <http:listener config-ref="salesforce-acumatica-sync-api-httpListenerConfig" path="/api/*">
             <http:response statusCode="#[vars.httpStatus default 200]">
