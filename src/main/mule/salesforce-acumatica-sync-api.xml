@@ -3,7 +3,7 @@
     <http:listener-config name="salesforce-acumatica-sync-api-httpListenerConfig">
         <http:listener-connection host="0.0.0.0" port="8081" />
     </http:listener-config>
-    <apikit:config name="salesforce-acumatica-sync-api-config" api="resource::272c406d-e2c1-4b02-87f9-38e686f1e9e1:salesforce-acumatica-sync-api:1.0.0:raml:zip:salesforce-acumatica-sync-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+    <apikit:config name="salesforce-acumatica-sync-api-config" api="resource::43fbf18f-9dc9-4be9-a90f-970dcb8f70f7:salesforce-acumatica-sync-api:1.0.0:raml:zip:salesforce-acumatica-sync-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
     <flow name="salesforce-acumatica-sync-api-main">
         <http:listener config-ref="salesforce-acumatica-sync-api-httpListenerConfig" path="/api/*">
             <http:response statusCode="#[vars.httpStatus default 200]">
