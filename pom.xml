@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>272c406d-e2c1-4b02-87f9-38e686f1e9e1</groupId>
+	<groupId>43fbf18f-9dc9-4be9-a90f-970dcb8f70f7</groupId>
 	<artifactId>mule-sfdc-acumatica</artifactId>
 	<version>1.0.1</version>
 	<packaging>mule-application</packaging>
